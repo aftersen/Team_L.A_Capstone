@@ -3,23 +3,41 @@
 
 ### 참여자명단
 
-20183301 김성호
+20183320 박지욱 (팀장 / 기획 / 디자인)
 
-20183307 김준
+20183301 김성호 (기획보조 / 개발)
 
-20183320 박지욱 (팀장)
+20183307 김준 (개발)
 
-20183329 양원웅
+20183329 양원웅 (디자인)
 
-20183333 유승우
+20183333 유승우 (디자인)
 
 
-
-### 실행 환경
+### 실행 환경 및 시스템 요구 사항
 
 Unity(2019.4.31f1 LTS)
 
-VR
+![image](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/7129d5c3-6bea-448c-93d4-c46c12c185e7)
+
+
+VR기기 환경 (퀘스트2)
+
+![image](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/fa2d4ac8-1e38-4744-8623-243a367c621a)
+
+
+VRCHAT
+
+![image](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/b37bf9b1-3457-4e18-99aa-5c64b9c0e93a)
+
+시스템 요구 사양 참고 : [VRCHAT 나무위키](https://namu.wiki/w/VRChat#s-2)
+
+
+### 프로젝트 파일 적용 방법
+
+1. Unity Package File 모든 파일 다운로드, 압축풀기
+2. 유니티 패키지 파일 실행
+
 
 ### 프로젝트 파일 내에서 게임 실행 방법
 
@@ -115,3 +133,29 @@ teleport: https://www.youtube.com/watch?v=O_8zGfhdzk0
 나레이션: https://www.youtube.com/watch?v=cQ3hWKY-NiA
 
 trigger door: https://www.youtube.com/watch?v=8gm7MVAby1w&t=1s
+
+### 프로그램 실행 사진
+
+1. 플레이어가 일정 위치에 다다르면 이벤트 트리거 발동
+
+![3-3](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/4451e068-bcf0-42aa-b8f5-2e0ad581f5c8)
+
+![3-4](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/521b4cfb-b6e3-4843-bfa5-f17ed2793755)
+
+![3-2](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/069198ba-53fa-4da0-955d-2ef1e4b7037b)
+
+
+2. 올바른 오브젝트를 트리거 설정 위치에 가지고 가면 이벤트 발생
+
+![5](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/ed9b01de-3b6e-4cc1-8ede-51faef23298d)
+
+![5-1](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/836c5a6b-60f5-4947-898e-de72b938b49e)
+
+![5-2](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/5e56503c-122b-41f8-9bd2-e681c55523a9)
+
+
+3. 플레이어가 일정 위치에 다다르면 이벤트 트리거 발동 (애니메이션 + 사운드)
+
+![5-3](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/03de99c4-1a25-4208-874b-bec9ef310ea5)
+
+![5-4](https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/6cf7d9bb-c8c7-4e28-91c8-430195d9bb6d)
