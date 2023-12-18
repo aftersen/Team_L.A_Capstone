@@ -13,6 +13,7 @@
 
 20183333 유승우 (디자인)
 
+---
 
 ### 실행 환경 및 시스템 요구 사항
 
@@ -32,20 +33,97 @@ VRCHAT
 
 시스템 요구 사양 참고 : [VRCHAT 나무위키](https://namu.wiki/w/VRChat#s-2)
 
+---
 
 ### 프로젝트 파일 적용 방법
 
 1. Unity Package File 모든 파일 다운로드, 압축풀기
 2. 유니티 패키지 파일 실행
+3. VRCHAT 계정 연결
 
+### VRCHAT 회원 가입 및 로그인
+
+프로젝트 내에서 VRCHAT 관련 기능을 이용하기 위해서는 VRCHAT 계정이 필요하다. 
+(STEAM 환경 로그인에서는 관리자 및 개발자 기능을 이용하지 못한다.)
+
+VRCHAT 홈페이지 접속 [VRCHAT 홈페이지](https://hello.vrchat.com/)
+
+STEAM 계정이 아닌 자체 계정을 생성하여 활용한다. 
 
 ### 프로젝트 파일 내에서 게임 실행 방법
 
-1.VR 장비 착용
+#### 프로젝트 세팅
 
-2.VRCHAT회원가입및 로그인 후 Udon다운
+새 빈 3D 프로젝트 생성
 
-3.VRCHAT실행
+프로젝트 플랫폼 PC 환경 설정 (Window, MAC, Linux) 
+
+#### UDON SDK 불러오기
+
+VRCHAT 로그인 후, 다운로드 페이지에서 SDK 다운로드 [SDK 다운로드 페이지](https://vrchat.com/home/download)
+
+<img width="307" alt="image" src="https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/0ee59bd3-2f51-46ec-9179-3901b49e3dc3">
+
+다운받은 패키지를 유니티에서 오픈한다.
+
+<img width="165" alt="image" src="https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/71ac82d6-c1f6-4614-97ac-e8d036a21bfd">
+
+UDON이 적용되어 프로젝트를 활용 가능하다.
+
+#### VRCHAT 월드 빌딩 및 실행
+
+<img width="297" alt="image" src="https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/a0dccfa5-e433-479f-86fc-85f7f0820bf4">
+
+
+1.  UDON 패키지와 VRCHAT 게임이 설치된 상태에서 유니티 프로젝트 창 상단의 "VR Chat SDK"를 선택 후, "Show Control Panel"을 선택하여 설정 창을 연다.
+2.  "Authentication" 탭에서 VRCHAT 아이디로 로그인(Sign in)
+3.  제작한 프로젝트를 실행하기 위해 "Settings" 탭에서 하단의 "Edit"버튼을 눌러 자신의 VRCHAT 실행파일 설치경로를 선택한다.
+
+<img width="397" alt="image" src="https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/085e27b1-1527-4074-9909-d24e9d80f93b">
+
+
+4.  "Builder" 탭에서 "Setup Layers for VR Chat" 버튼을 통해 레이어 설정, "Set Collision Matrix" 버튼을 통해 콜리전 행렬 재설정
+5.  "Force non-VR"을 체크하고 "Build & Test" 버튼을 눌러 프로젝트 빌딩, VRChat 실행.
+6.  만든 맵, 기능을 인게임에서 테스트 진행 가능.  
+
+실행방법 세부 참고 [실행방법 가이드 블로그 글](https://gongdolhoon.tistory.com/entry/UnityVR-Chat-SDK-7-Udon-%EC%98%88%EC%A0%9C-%EB%B9%8C%EB%93%9C%ED%95%B4%EB%B3%B4%EA%B8%B0)
+
+참고 문헌 :
+
+[UDON 시작 가이드](https://creators.vrchat.com/worlds/udon/)
+
+[빌딩&테스트](https://creators.vrchat.com/worlds/udon/getting-started-with-udon/)
+
+[유니티 버전 설정](https://gongdolhoon.tistory.com/entry/UnityVR-Chat-SDK-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EB%B2%84%EC%A0%84-%EC%84%A4%EC%A0%95?category=836424)
+
+[VRCHAT 월드 업로드](https://gongdolhoon.tistory.com/entry/UnityVR-Chat-SDK-World-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0?category=836424)
+
+---
+
+#### 메타퀘스트2 및 VR 기기에서 VRCHAT 실행 및 업로드 한 맵 접속
+1. 기본 VR기기 초기 설정 완료
+[메타퀘스트 초기 설정 가이드](https://www.meta.com/ko-kr/help/quest/articles/getting-started/getting-started-with-quest-2/) 
+
+2. PC에 VR기기를 연결하고, 스팀VR을 실행
+
+[메타퀘스트2 기준 스팀VR 실행방법](https://blog.naver.com/12512512/222893398476)
+
+<img width="673" alt="image" src="https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/79bef45f-84e5-4e95-8cc8-d8a3c90126de">
+
+
+3. VRCHAT 라이브러리 게임 설치 후, 실행, 계정 로그인 
+
+<img width="669" alt="image" src="https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/ed71a0ed-e30f-450d-a4d5-e2048fcc550e">
+
+
+4. 자신이 업로드한 맵의 이름을 월드 목록 검색창에서 검색 후, 접속
+
+<img width="670" alt="image" src="https://github.com/aftersen/Team_L.A_Capstone/assets/138434437/32a6bda3-af46-471b-99fc-8489cfa1b7cc">
+
+검색이 되지 않는다면 업로드 설정 재확인 바람. 
+
+---
+
 
 ### 로직 설명
 
